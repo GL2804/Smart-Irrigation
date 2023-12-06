@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Sobre a planta</title>
+
+  <!-- Montserrat Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <!-- Favicon Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/aboutyourplant.css">
+</head>
+
+<body>
+  <div class="grid-container">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="menu-icon" onclick="openSidebar()">
+        <span class="material-icons-outlined">menu</span>
+      </div>
+      <button id="logoutButton">Sair</button>
+    </header>
+    <!-- End Header -->
+
+    <!-- Sidebar -->
+    <aside id="sidebar">
+      <div class="sidebar-title">
+        <div class="sidebar-brand">
+          <span class="material-symbols-outlined">potted_plant</span> Sistema de Irrigação IoT
+        </div>
+        <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+      </div>
+
+      <ul class="sidebar-list">
+        <li class="sidebar-list-item">
+          <a href="dashboard.html" id="dashboardLink" target="_blank">
+            <span class="material-icons-outlined">dashboard</span> Dashboard
+          </a>
+        </li>
+        <li class="sidebar-list-item" id="aboutyoutplantMenuItem">
+          <a href="#" target="_blank">
+            <span class="material-icons-outlined">grass</span> Sobre a planta
+          </a>
+        </li>
+        <li class="sidebar-list-item">
+          <a href="#" target="_blank">
+            <span class="material-icons-outlined">settings</span> Configurações
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <!-- End Sidebar -->
+
+    <!-- Main -->
+    <main class="main-container">
+      <div class="main-title">
+        <p class="font-weight-bold">Samambaia Americana</p>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <p class="text-primary">
+            A samambaia americana, também conhecida como samambaia de Boston ou Nephrolepis
+            exaltata, é uma planta nativa da América Central e do Sul. É uma planta de sombra
+            e umidade, e é muito popular como planta ornamental em interiores e exteriores.
+            A samambaia americana é uma planta fácil de cuidar e é uma ótima opção para
+            ambientes internos e externos. Com os cuidados adequados, ela irá prosperar por
+            muitos anos.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <p class="text-primary">
+            <span class="bold">OBSERVAÇÃO: </span>Alguns desses cuidados e dicas abaixo serão feitas automaticamente
+            através do sistema,
+            porém em caso de optar por desligar o seu sistema de irrigação IOT esses são os cuidados básico que você
+            precisa saber.
+          </p>
+        </div>
+      </div>
+
+      <p class="font-weight-bold">Cuidados com a samambaia americana</p>
+
+      <div class="card">
+        <div class="card-inner">
+          <li><span class="bold">Iluminação:</span> A samambaia americana prefere luz indireta e difusa. A exposição
+            direta ao sol pode queimar suas folhas.</li>
+          <li><span class="bold">Rega:</span> A samambaia americana gosta de solo úmido, mas não encharcado. É
+            importante regar a planta regularmente, mas permitindo que o solo seque entre as regas.</li>
+          <li><span class="bold">Nutrientes:</span> A samambaia americana deve ser fertilizada regularmente durante a
+            primavera e o verão. Use um fertilizante líquido balanceado, diluído pela metade da concentração recomendada
+            na embalagem.</li>
+          <li><span class="bold">Temperatura:</span> A samambaia americana prefere temperaturas amenas, entre 18 e 25
+            graus Celsius.</li>
+          <li><span class="bold">Umidade:</span> A samambaia americana gosta de ambientes úmidos. Se o ar estiver muito
+            seco, você pode borrifar as folhas da planta com água regularmente.</li>
+          <li><span class="bold">Transplante:</span> A samambaia americana deve ser transplantada a cada dois ou três
+            anos. O melhor momento para transplantar é na primavera, quando a planta está crescendo ativamente.</li>
+          <li><span class="bold">Propagação:</span> A samambaia americana pode ser propagada por divisão. Para isso,
+            separe uma muda da planta-mãe, com raízes bem desenvolvidas. Plante a muda em um vaso com solo úmido e
+            mantido em sombra.</li>
+          <li><span class="bold">Problemas comuns:</span> A samambaia americana é uma planta relativamente resistente,
+            mas pode ser afetada por algumas pragas e doenças. As pragas mais comuns são cochonilhas, pulgões e ácaros.
+            As doenças mais comuns são o oídio e a podridão das raízes.</li>
+        </div>
+      </div>
+
+      <p class="font-weight-bold">Dicas para cuidar da samambaia americana</p>
+
+      <div class="card">
+        <div class="card-inner">
+          <li>Coloque a samambaia americana em um local com luz indireta e difusa.</li>
+          <li>Regue a samambaia americana regularmente, mas permitindo que o solo seque entre as regas.</li>
+          <li>Fertilize a samambaia americana regularmente durante a primavera e o verão.</li>
+          <li>Mantenha a samambaia americana em um ambiente úmido.</li>
+          <li>Transplante a samambaia americana a cada dois ou três anos.</li>
+          <li>Propague a samambaia americana por divisão.</li>
+          <li>Monitore a samambaia americana para pragas e doenças.</li>
+        </div>
+      </div>
+    </main>
+    <!-- End Main -->
+  </div>
+
+  <!-- Scripts -->
+  <!-- ApexCharts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/dashboard.js"></script>
+</body>
+
+</html>

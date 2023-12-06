@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- biblioteca de ícones -->
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- Favicon Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Conecte-se</title>
+
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <!-- container onde abriga as demais seções (essa organização também facilita a estilização nos arquivos css de cada div) -->
+
+        <div class="form-container logar"> <!-- container para a tela de logar na conta -->
+            <form>
+                <h1>Entrar</h1>
+
+                <div class="icones"> <!-- container onde estará os ícones-->
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <!-- imagens dos ícones dos botões do google e github, href="#" pois não há hiperlink para ser inserido -->
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <span>ou use sua senha de e-mail</span>
+                <input type="email" placeholder="E-mail"> <!-- Campos para inserir dados -->
+                <input type="password" placeholder="Senha" id="senhaInserida">
+                <i class="fa-solid fa-eye" id="olhinho"></i>
+                <!-- através da tag <i> é possível utilizar ícones da biblioteca, esta será utilizada para mostrar/esconder a senha no login -->
+                <!--<input type="checkbox" onclick="exibirSenha()">Mostrar senha-->
+                <a href="#">Esqueceu sua senha?</a> <!-- consta href="#" pois não há hiperlink para ser inserido -->
+                <button>Entrar</button>
+            </form>
+        </div>
+
+        <div class="form-container inscrever"> <!-- container para a tela de criar conta -->
+            <form>
+                <h1>Criar uma conta</h1>
+                <div class="icones"> <!-- container onde estará os ícones-->
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <!-- imagens dos ícones dos botões do google e github, href="#" pois não há hiperlink para ser inserido -->
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <span>ou use seu e-mail para cadastro</span>
+                <input type="text" placeholder="Nome"> <!-- Campos para inserir dados -->
+                <input type="email" placeholder="E-mail">
+                <input type="password" placeholder="Senha">
+                <button>Inscrever-se</button>
+            </form>
+        </div>
+
+        <div class="toggle-container">
+            <!-- container para transição de divs diferentes, irá apresentar e esconder elementos (neste caso o texto e os botões para mudar de tela) -->
+            <div class="toggle"> <!-- alterna a seção em dois estados diferentes-->
+                <div class="toggle-panel toggle-left"> <!-- o conteúdo desta seção se moverá para esquerda -->
+                    <p>Insira seus dados pessoais para usar todos os recursos do monitoramento de irrigação IOT.</p>
+                    <button class="hidden" id="login">Entrar</button>
+                    <!-- quando a div se mover para esquerda, esconde este botão -->
+                </div>
+                <div class="toggle-panel toggle-right"> <!-- o conteúdo desta seção se moverá para direita -->
+                    <h1>Olá!</h1>
+                    <p>Registre-se com seus dados pessoais para usar todos os recursos do monitoramento de irrigação
+                        IOT.</p>
+                    <button class="hidden" id="cadastrar">Inscreva-se</button>
+                    <!-- quando a div mover para direita, esconde este botão -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

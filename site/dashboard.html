@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Painel de Controle</title>
+
+  <!-- Montserrat Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <!-- Favicon Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+  <div class="grid-container">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="menu-icon" onclick="openSidebar()">
+        <span class="material-icons-outlined">menu</span>
+      </div>
+      <button id="logoutButton">Sair</button>
+    </header>
+    <!-- End Header -->
+
+    <!-- Sidebar -->
+    <aside id="sidebar">
+      <div class="sidebar-title">
+        <div class="sidebar-brand">
+          <span class="material-symbols-outlined">potted_plant</span> Sistema de Irrigação IoT
+        </div>
+        <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+      </div>
+
+      <ul class="sidebar-list">
+        <li class="sidebar-list-item">
+          <a href="#" target="_blank">
+            <span class="material-icons-outlined">dashboard</span> Dashboard
+          </a>
+        </li>
+        <li class="sidebar-list-item">
+          <a href="aboutyourplant.html" target="_blank">
+            <span class="material-icons-outlined">grass</span> Sobre a planta
+          </a>
+        </li>
+        <li class="sidebar-list-item">
+          <a href="#" target="_blank">
+            <span class="material-icons-outlined">settings</span> Configurações
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <!-- End Sidebar -->
+
+    <!-- Main -->
+    <main class="main-container">
+      <div class="main-title">
+        <p class="font-weight-bold">DASHBOARD</p>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <p class="text-primary">DATA E HORA DA ÚLTIMA IRRIGAÇÃO</p>
+          <span class="material-icons-outlined">calendar_today</span>
+        </div>
+        <span id="irrigou" class="text-primary font-weight-bold"></span>
+      </div>
+
+      <div class="main-cards">
+
+        <div class="card">
+          <div class="card-inner">
+            <p class="text-primary">FLUXO</p>
+            <span class="material-symbols-outlined">account_tree</span>
+          </div>
+          <span id="fluxo" class="text-primary font-weight-bold"></span>
+        </div>
+
+        <div class="card">
+          <div class="card-inner">
+            <p class="text-primary">TEMPERATURA °C</p>
+            <span class="material-icons-outlined">thermostat</span>
+          </div>
+          <span id="temperatura" class="text-primary font-weight-bold"></span>
+        </div>
+
+        <div class="card">
+          <div class="card-inner">
+            <p class="text-primary">% UMIDADE DO AR</p>
+            <span class="material-icons-outlined">air</span>
+          </div>
+          <span id="umidade-ar" class="text-primary font-weight-bold"></span>
+        </div>
+
+        <div class="card">
+          <div class="card-inner">
+            <p class="text-primary">% UMIDADE DO SOLO</p>
+            <span class="material-icons-outlined">grass</span>
+          </div>
+          <span id="umidade-solo" class="text-primary font-weight-bold"></span>
+        </div>
+      </div>
+
+      <div class="charts">
+        <div class="charts-card">
+          <p class="chart-title">UMIDADE DO SOLO</p>
+          <div id="area-chart"></div>
+        </div>
+
+        <div class="charts-card">
+          <p class="chart-title">UMIDADE DO AR</p>
+          <div id="area-chart2"></div>
+        </div>
+
+        <div class="charts-card">
+          <p class="chart-title">TEMPERATURA</p>
+          <div id="line-chart"></div>
+        </div>
+
+        <div class="charts-card">
+          <p class="chart-title">FLUXO DA ÁGUA</p>
+          <div id="line-chart2"></div>
+        </div>
+      </div>
+    </main>
+    <!-- End Main -->
+  </div>
+
+  <!-- Scripts -->
+  <!-- ApexCharts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/dashboard.js"></script>
+</body>
+
+</html>
